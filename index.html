@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="blue-backing">
+
+        <section class="logo-box">
+            <img id="logo" src="img/logo.svg" alt="icon" />
+        </section>
+
+
+        <section class="main-box">
+
+            <section class="left-box">
+
+                    <div class="input-form-up">
+                        <form>
+                            <label class="form-text" for="bill-section">Bill</label><br>
+                            <div class="error-msg-text">Can't be zero</div>
+                            <div class="input-container">
+                            <i class="icon1"></i>
+                            <input  class="input-field input-check" type="number" id="totalBill" name="bill" placeholder="0" step="0.01">
+                            </div>
+                        </form>
+                    </div>
+
+                    <section class="middle-box">
+                        <label for="tipAmount" class="form-text">Select Tip %</label>
+                        <section class="tipBox">
+                            <div class="tipPercent" tabindex="1">5%</div>
+                            <div class="tipPercent" tabindex="2">10%</div>
+                            <div class="tipPercent" tabindex="3">15%</div>
+                            <div class="tipPercent" tabindex="4">25%</div>
+                            <div class="tipPercent" tabindex="5">50%</div>
+                             <div class="customTip" tabindex="6">
+                                <input class="input-middle input-check" type="number" id="customTipAmount" name="bill" placeholder="Custom" step="0.01">
+                             </div>   
+                        </section>
+                    </section>
+                    
+
+                    <div class="input-form-down">
+                        <form>
+                            <label class="form-text" for="bill-section">Number of people</label><br>
+                            <div class="input-container">
+                                <i class="icon2"></i>
+                                <input class="input-field input-check" min="1" type="number" id="amountOfPeople" name="amount" placeholder="0">
+                                <div id="numberOfPeople-error" class="error-message">Can't be zero</div>
+                                </div>
+                        </form>
+                    </div>
+
+            </section>
+
+
+
+
+
+            <section class="right-box">
+                <div class="tip">
+                    <div class="name"> Tip Amount
+                        <div class="perPerson"> / person</div>
+                    </div>
+                    <div class="price" id="person">$0.00</div>
+                </div>
+
+                <div class="total">
+                    <div class="name"> Total
+                        <div class="perPerson"> / person</div>
+                    </div>
+                    <div class="price" id="total">$0.00</div>
+                </div>
+                </div>
+
+                <div class="button-box">
+                    <a class="btn-reset" href="">Reset</a>
+                </div>
+
+            </section>
+
+        </section>
+
+
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
