@@ -4,105 +4,108 @@
     font-family: 'Space Mono', monospace;
 }
 
+:root {
+    --primary-background-color:#C5E4E7;
+    --primary-white-color: #FFFFFF;
+    --error-orange-color: #E17457;
+    --dark-green-color: #00474B;
+    --input-color-tip-focus:#26C2AE;
+    --input-middle-color:#547878;
+    --input-background-color: #F3F9FA;
+    --form-text-color: #5E7A7D;
+    --btn-reset: #0D686D;
+    --btn-reset-active-tipPersent-hover: #9FE8DF;
+    --prePerson: #7F9D9F;
+}
+
 html {
-    background: #C5E4E7;
+    background: var(--primary-background-color);
     display: flex;
     justify-content: center;
 }
 
 .logo-box {
-    width: 86.66px;
-    height: 53.14px;
-    margin: 5% auto;
-    border: 1px solid green;
+    width: 5.4162rem;
+    height: 3.3213rem;
+    margin: 5.4375rem auto 5.4375rem auto;
 }
 
 .main-box {
-    width: 920px;
-    height: 481px;
-    border-radius: 25px;
-    background-color: #FFFFFF;
+    width: 57.5rem;
+    height: 30.0625rem;
+    border-radius: 1.5625rem;
+    background-color: var(--primary-white-color);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .left-box {
-    width: 379px;
-    height: 388px;
+    width: 23.6875rem;
+    height: 24.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .middle-box {
-    margin-top: 18px;
-
-
+    margin-top: 1.125rem;
 }
-
-
 
 .input-field {
-    width: 379px;
-    height: 48px;
-    margin-top: 6px;
-
+    width: 23.6875rem;
+    height: 3rem;
+    margin-top: 0.375rem;
 }
 
-
 input {
-    background-color: #F3F9FA;
+    background-color: var(--input-background-color);
     border: none;
     text-align: right;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
     font-weight: 700;
-    color: #00474B;
     cursor: pointer;
-    caret-color: #26C2AE;
-    border-radius: 5px;
+    caret-color: var(--input-color-tip-focus);
+    color: var(--dark-green-color);
+    border-radius: 0.3125rem;
     box-sizing: border-box;
-    border: 2px solid white;
+    border: 0.125rem solid var(--primary-white-color);
 }
 
 input:hover {
-    border: 2px solid #26C2AE;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    border: 0.125rem solid var(--input-color-tip-focus);
+    border-radius: 0.3125rem;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 }
-
 
 input:focus {
     outline: none;
-    border: 2px solid #26C2AE;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    border: 0.125rem solid var(--input-color-tip-focus);
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 }
-
 
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin-right: 17px;
-
+    margin-right: 1.0625rem;
 }
 
-
-::placeholder {
-    color: #00474B;
+.input-middle::placeholder {
+    color: var(--input-middle-color);
+}
+  
+.input-field::placeholder {
+    color: var(--dark-green-color);
     opacity: 0.35;
-
 }
 
 .icon1,
 .icon2 {
     background-repeat: no-repeat;
-    width: 9.84px;
-    height: 15.45px;
+    width: 0.615rem;
+    height: 0.9656rem;
     position: absolute;
-    left: 19.46px;
+    left: 1.2163rem;
     top: 50%;
     transform: translateY(-50%);
     background-size: contain;
@@ -116,94 +119,80 @@ input[type="number"]::-webkit-inner-spin-button {
     background-image: url("../img/icon-person.svg");
 }
 
-
 .input-container {
     display: flex;
     position: relative;
     box-sizing: border-box;
-
 }
-
 
 .form-text {
-    color: #5E7A7D;
+    color: var(--form-text-color);
     font-weight: 700;
-    font-size: 16px;
-    line-height: 23.7px;
+    font-size: 1rem;
+    line-height: 1.4812rem;
 }
-
 
 .tipBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .tipSelector {
-    margin-top: 7px;
-
+    margin-top: 0.4375rem;
 }
 
 .tipPercent,
 .input-middle {
-    width: 117px;
-    height: 48px;
-    border-radius: 5px;
-    margin-bottom: 16px;
+    width: 7.3125rem;
+    height: 3rem;
+    border-radius: 0.3125rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     cursor: pointer;
-
 }
 
 .tipPercent {
-    background-color: #00474B;
-    color: #FFFFFF;
+    background-color: var(--dark-green-color);
+    color: var(--primary-white-color);
 }
 
 .tipPercent:hover {
-    background: #9FE8DF !important;
-    color: #00474B;
-}
+    background: var(--btn-reset-active-tipPersent-hover) !important;
+    color: var(--dark-green-color);
+} 
 
 .tipPercent:focus {
-    background: #26C2AE !important;
-    color: #00474B;
-}
+    background: var(--input-color-tip-focus) !important;
+    color: var(--dark-green-color);
+} 
 
 .input-middle {
-    background-color: #F3F9FA;
-    color: #547878;
-
+    background-color: var(--input-background-color);
+    color: var(--dark-green-color);
 }
-/* checking html/css solution for Number of people  */
-input:invalid{
-    border: 2px solid #E17457;
-  }
 
-  input:invalid + .error-message {
-    display: block;
-  }
-  
-  .error-message {
+input:invalid {
+    border: 0.125rem solid var(--error-orange-color);
+}
+
+.error-msg-text{
     display: none;
-    margin-top: 5px;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: right;
+    color: var(--error-orange-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 700;
-    color: #E17457;;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-  }
+}
 
-  /* end  */
-
-.error{
-    border: 2px solid #E17457;
-  }
+/* end  */
 
 
 
@@ -213,34 +202,33 @@ input:invalid{
 .right-box {
     display: flex;
     flex-direction: column;
-    width: 413px;
-    height: 417px;
-    background: #00474B;
-    border-radius: 15px;
+    width: 25.8125rem;
+    height: 26.0625rem;
+    background: var(--dark-green-color);
+    border-radius: 0.9375rem;
 }
 
 .tip,
 .total {
     display: flex;
     justify-content: space-between;
-    width: 333px;
-    height: 71px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 20.8125rem;
+    height: 4.4375rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
 
 .tip {
-    padding-top: 40px;
+    padding-top: 2.5rem;
 }
 
 .total {
-    padding-top: 27px;
+    padding-top: 1.6875rem;
 }
 
-
 .perPerson {
-    color: #7F9D9F;
-    size: 13px;
+    color: var(--prePerson);
+    size: 0.8125rem;
 }
 
 .name,
@@ -248,57 +236,56 @@ input:invalid{
     font-weight: 700;
 }
 
-
 .name {
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    padding-top: 16px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--primary-white-color);
+    padding-top: 1rem;
 }
 
 .price {
-    font-size: 48px;
-    line-height: 71px;
-    letter-spacing: -1px;
-    color: #26C2AE;
+    font-size: 3rem;
+    line-height: 4.4375rem;
+    letter-spacing: -0.0625rem;
+    color: var(--input-color-tip-focus);
     display: flex;
     justify-content: flex-end;
 }
 
-
 .button-box {
-    height: 205px;
+    height: 12.8125rem;
     display: flex;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
     justify-content: center;
 }
 
 .btn-reset {
-    width: 333px;
-    height: 48px;
-    background-color: #0D686D;
-    border-radius: 5px;
+    width: 20.8125rem;
+    height: 3rem;
+    background-color: var(--btn-reset);
+    border-radius: 0.3125rem;
     display: flex;
     align-self: flex-end;
     justify-content: space-around;
     align-items: center;
 }
 
-.btn-reset:hover {
-    background-color: #9FE8DF;
+.btn-reset:active {
+    background-color: var(--btn-reset-active-tipPersent-hover);
 }
 
 a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: #00474B;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: var(--dark-green-color);
 }
 
 .tipPercent:hover,
 .tipPercent:focus {
-    background: #26C2AE;
-    color: #00474B;
+    background: var(--input-color-tip-focus);
+    color: var(--dark-green-color);
 }
+
