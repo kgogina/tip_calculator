@@ -1,6 +1,10 @@
 # Tip Calculator 
 This is a JS web application that calculates the tip amount and total bill per person based on the bill amount, tip percentage, and number of people.
 
+## Preview
+
+![Desktop preview](preview_screenshort_desktop.png)
+
 ## Technologies Used
 
 - HTML
