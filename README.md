@@ -61,3 +61,8 @@ Please refer to the `script.js` file for more details and implementation of thes
 
 ## Contributing
 Contributions are welcome! If you have any suggestions or improvements for the project, please create a pull request.
+
+## Acknowledgements
+Special thanks to [Frontend Mentor](https://www.frontendmentor.io) for providing the task/project that served as the basis for this code.
+
+
