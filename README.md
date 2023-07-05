@@ -15,7 +15,7 @@ This is a JS web application that calculates the tip amount and total bill per p
 
 ## Getting Started
 
-You can access a live demo via [this link](https://example.com](https://kgogina.github.io/tip_calculator/). 
+You can access a live demo via [this link](https://kgogina.github.io/tip_calculator/). 
 This allows you to use the application directly in your web browser without the need to clone or download the repository.
 
 ## Usage
